@@ -596,7 +596,7 @@ button:hover {
 /* ::::: RESPONSIVE DESIGN DEVICE SIZES ::::: */
 
 /* for Responsive Target the ROW Code (display:grid) */
-/* @media (width <=576px) */
+/* MOBILE */
 @media (max-width: 576px) {
 
     .grid-1,
@@ -613,7 +613,6 @@ button:hover {
         top: 3.5rem;
         right: 2rem;
         cursor: pointer;
-
     }
 
     .navBarBox1 {
@@ -625,35 +624,26 @@ button:hover {
 
     #iconToggle:checked~.navBarBox1 {
         display: flex;
-
     }
 
     #iconToggle:checked~.navBarBox1 li:hover {
-        /* background-color: #14476c; */
         cursor: pointer;
-
     }
 
     #iconToggle:checked~.navBarBox1 li:hover a {
         color: #ffffff;
         font-weight: 500;
-
     }
 
     .links {
-        /* background-color: #be9c79; */
-        /* width: 100%; */
         display: flex;
         flex-direction: column;
-
-        /* margin-left: 38rem; */
-        /* align-items: end; */
     }
 
     .heroSectionBox h1 {
-        font-size: 3rem;
+        font-size: 2.5rem; /* Fixed */
         font-weight: 900;
-        line-height: 1.0;
+        line-height: 1;
     }
 
     .heroSectionBox p {
@@ -681,7 +671,7 @@ button:hover {
     }
 
     .facilityBox h2 {
-        font-size: 4rem;
+        font-size: 3rem; /* Fixed */
         margin: 0rem 0rem 3rem;
     }
 
@@ -690,15 +680,14 @@ button:hover {
     }
 
     .team {
-        padding: 0rem 10rem;
+        padding: 0rem 1rem; /* Fixed */
     }
 
-    .popularMenu{
+    .popularMenu {
         padding: 0rem 2rem;
     }
 
- 
-    .facilityMenuBox p{
+    .facilityMenuBox p {
         font-size: 2rem;
         margin: 1rem 0rem;
     }
@@ -709,7 +698,8 @@ button:hover {
 
     .contactBox img {
         width: 100%;
-        height: 70rem;
+        height: auto; /* Fixed */
+        display: block;
     }
 
     .contactIcon h6 {
@@ -720,9 +710,9 @@ button:hover {
     .contactIcon p {
         margin: 0rem 0rem 0.5rem;
     }
-
 }
-/* TABLET RESPONSIVE CODE */
+
+/* TABLET */
 @media (min-width: 577px) and (max-width: 768px) {
 
     .grid-1,
@@ -768,7 +758,7 @@ button:hover {
         padding-right: 1.5rem;
         padding-left: 1.5rem;
         margin-right: auto;
-        margin-left: auto
+        margin-left: auto;
     }
 
     .galleryBody1 {
@@ -777,8 +767,8 @@ button:hover {
     }
 }
 
-/* @media (min-width: 769px) and (max-width: 992px) */
-@media (min-width:769px) and (max-width: 992px) {
+/* SMALL LAPTOP */
+@media (min-width:769px) and (max-width:992px) {
 
     .grid-1,
     .grid-2,
@@ -788,7 +778,7 @@ button:hover {
     }
 
     .grid-4 {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
         padding: 0rem 1rem;
     }
 
@@ -810,16 +800,12 @@ button:hover {
     }
 }
 
-/* @media (min-width: 993px) and (max-width: 1200px) */
-@media (min-width:993px) and (max-width:1200px) {}
+/* LARGE LAPTOP */
+@media (min-width:993px) and (max-width:1200px) {
 
-/* @media (min-width: 1200px)  */
-@media (width:1200px) {}
+}
 
+/* DESKTOP */
+@media (min-width:1200px) {
 
-
-
-
-
-
-
+}
